@@ -1,0 +1,17 @@
+{
+  "name": "adoProductsBackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FlavioWAB/adoProducts-backend.git",
+  "author": "FlavioWAB <59736888+FlavioWAB@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.2.4",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.1.0"
+  }
+}

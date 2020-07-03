@@ -1,0 +1,5 @@
+2020-07-03T05:32:20.195Z info action: "DELETE FROM `Users` WHERE `name` = 'juliano'" 
+2020-07-03T05:32:20.210Z info action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`name` = 'ronaldo' LIMIT 1;" 
+2020-07-03T05:32:20.213Z info action: "INSERT INTO `Users` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?);" binds: ["8fc71a10-bcee-11ea-bb0e-19fc29bdb578","Ronaldo","meu@email.com","2020-07-03 05:32:18","2020-07-03 05:32:18"]
+2020-07-03T05:32:20.257Z info action: "INSERT INTO `Users` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?);" binds: ["8fc74120-bcee-11ea-bb0e-19fc29bdb578","Ronaldo","meu@emsail.com","2020-07-03 05:32:18","2020-07-03 05:32:18"]
+2020-07-03T05:32:20.259Z info action: "UPDATE `Users` SET `name`=?,`updatedAt`=? WHERE `name` = ?" binds: ["a very different title now","2020-07-03 05:32:18","ronaldo"]
