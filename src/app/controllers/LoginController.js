@@ -17,13 +17,13 @@ class LoginController {
 
             if (!user) {
                 return res.status(401).json({
-                    message: 'User not found'
+                    error: ['User not found']
                 });
             }
 
             if (!(await user.checkPassword(password))) {
                 return res.status(401).json({
-                    message: 'Incorrect password'
+                    error: ['Incorrect password']
                 });
             }
 

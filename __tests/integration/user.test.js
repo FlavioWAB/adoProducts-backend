@@ -11,13 +11,17 @@ describe('User Management', () => {
     });
 
     it('should not create user with non-unique email', async () => {
-        const user = faker.getUser();
+        const user = {
+            name: 'asd',
+            email: 'asd',
+            password: 'asd'
+        };
 
         await factory.create('User', user);
 
         const response = await request(app)
             .post('/users')
-            .send(user).catch(err => console.log('errrooooo', err));
+            .send(user);
 
         expect(response.status).toBe(409);
 

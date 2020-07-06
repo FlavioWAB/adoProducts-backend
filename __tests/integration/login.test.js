@@ -18,7 +18,7 @@ describe('Authentication', () => {
                 email: user.email,
                 password: user.password,
             });
-
+            
         expect(response.status).toBe(200);
     });
 
