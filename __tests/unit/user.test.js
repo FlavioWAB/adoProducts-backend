@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 
-const { User } = require('../../src/app/models');
 const truncate = require('../utils/truncate');
+const factory = require('../utils/factories');
 
 describe('Authentication', () => {
     beforeEach(async () => {
@@ -15,9 +15,12 @@ describe('Authentication', () => {
             password: 'myhash'
         };
 
-        const user = await User.create(mockUser);
+        const user = await factory.create('User', mockUser);
+
         const passwordIsEqual = await bcrypt.compare(mockUser.password, user.passwordHash);
 
         expect(passwordIsEqual).toBe(true);
     });
+
+    
 });
