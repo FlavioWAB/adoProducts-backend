@@ -1,7 +1,5 @@
 const bcrypt = require('bcryptjs');
-const request = require('supertest');
 
-const { User } = require('../../src/app/models');
 const truncate = require('../utils/truncate');
 const factory = require('../utils/factories');
 

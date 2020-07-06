@@ -71,16 +71,16 @@ describe('Authentication', () => {
 
         expect(response.status).toBe(401);
     });
-});
 
-//describe('User account management', () => {
-//    it('should receive JWT token when authenticated with valid credentials',() => {
-//
-//    });
-//})
-//
-//describe('Product data management', () => {
-//    it('should receive JWT token when authenticated with valid credentials',() => {
-//
-//    });
-//})
+    it('should not authenticate with missing credentials', async () => {
+        const user = await factory.create('User');
+
+        const response = await request(app)
+            .post('/login')
+            .send({
+                email: user.email
+            });
+
+        expect(response.status).toBe(422);
+    });
+});

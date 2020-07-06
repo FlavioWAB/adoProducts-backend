@@ -1,154 +1,300 @@
-2020-07-06T02:26:47.767Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:26:47.769Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:26:47.774Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:26:47.780Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:26:47.781Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:26:47.784Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:26:47.786Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:26:47.786Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:26:47.786Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:26:47.787Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:26:47.789Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:26:47.790Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:26:47.790Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:26:47.791Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:26:47.794Z INFO action: "CREATE TABLE IF NOT EXISTS `users` (`id` UUID NOT NULL PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `passwordHash` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);" 
-2020-07-06T02:26:47.798Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:26:47.798Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:26:47.799Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:26:47.802Z INFO action: "INSERT INTO `SequelizeMeta` (`name`) VALUES ($1);" binds: ["20200703033356-update-users.js"]
-2020-07-06T02:27:11.883Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:27:11.886Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:27:11.887Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
-2020-07-06T02:27:11.887Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:27:11.888Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:27:11.888Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
-2020-07-06T02:27:11.892Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:27:11.893Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:27:11.893Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:27:11.896Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:27:26.767Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:27:26.770Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:27:26.771Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
-2020-07-06T02:27:26.772Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:27:26.772Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:27:26.772Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
-2020-07-06T02:27:26.777Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:27:26.778Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:27:26.778Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:27:26.781Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:28:04.461Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:28:04.464Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:28:04.465Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
-2020-07-06T02:28:04.465Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:28:04.465Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:28:04.466Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
-2020-07-06T02:28:04.470Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:28:04.471Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:28:04.471Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:28:04.474Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:28:23.621Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:28:23.623Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:28:23.624Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
-2020-07-06T02:28:23.624Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:28:23.625Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:28:23.625Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
-2020-07-06T02:28:23.630Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:28:23.630Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:28:23.630Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:28:23.633Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:28:27.006Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:28:27.054Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5f85c880-bf30-11ea-93f3-0369f2b3c17b","Angelica Bechtelar","Alfonso44@hotmail.com","$2a$08$zI6uoMxJ0CQfxVhk9I.yrOh/nK97d7Px3qsiScdaTz7EG9LrkSJUe","2020-07-06 02:28:27.018 +00:00","2020-07-06 02:28:27.018 +00:00"]
-2020-07-06T02:28:27.058Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:28:27.082Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:28:27.105Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5f9076e0-bf30-11ea-93f3-0369f2b3c17b","Jermey Hilll","Norene_Quigley@yahoo.com","$2a$08$MpfzDzGVynaITlMzzF5tcuchU1.M0oYA77U./A70FMsVB9B/M8jBu","2020-07-06 02:28:27.086 +00:00","2020-07-06 02:28:27.086 +00:00"]
-2020-07-06T02:28:27.109Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5f8d90b0-bf30-11ea-9659-a7cf36a5458a","Keon Schoen","Alfredo.Dare@gmail.com","$2a$08$vMnTpDy5uindl5/uxAtl3.J5i4dOw5ParJrnUcd4ughE8Liacsgmu","2020-07-06 02:28:27.069 +00:00","2020-07-06 02:28:27.069 +00:00"]
-2020-07-06T02:28:27.138Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Alfredo.Dare@gmail.com' LIMIT 1;" 
-2020-07-06T02:28:27.166Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:28:27.193Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5f9d6f30-bf30-11ea-9659-a7cf36a5458a","Keon Schoen","Alfredo.Dare@gmail.com","$2a$08$KxPmEny8GaIqSL.EZE.90ujMYc6nNRxqoe0DWCzfg3t8F2zGS5OCm","2020-07-06 02:28:27.172 +00:00","2020-07-06 02:28:27.172 +00:00"]
-2020-07-06T02:28:27.203Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Alfredo.Dare@gmail.com' LIMIT 1;" 
-2020-07-06T02:28:27.223Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:28:27.245Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5fa621c0-bf30-11ea-9659-a7cf36a5458a","Keon Schoen","Alfredo.Dare@gmail.com","$2a$08$EikOzlOukU/xNDwY2afCtuWNnuEzf3uTYO6eUoAyChiBnRvE6BfMm","2020-07-06 02:28:27.228 +00:00","2020-07-06 02:28:27.228 +00:00"]
-2020-07-06T02:28:27.254Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Alfredo.Dare@gmail.com' LIMIT 1;" 
-2020-07-06T02:28:27.274Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:28:27.299Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5fade9f0-bf30-11ea-9659-a7cf36a5458a","Keon Schoen","Alfredo.Dare@gmail.com","$2a$08$PsrVlkFs8mqVtdeIn/nPi.kJZHiIy.4Gf3IfXE3n0PUuCZ54KkrJe","2020-07-06 02:28:27.280 +00:00","2020-07-06 02:28:27.280 +00:00"]
-2020-07-06T02:28:27.309Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:28:27.318Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:04.921Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:29:04.923Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:29:04.924Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
-2020-07-06T02:29:04.925Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:29:04.925Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:29:04.926Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
-2020-07-06T02:29:04.930Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:29:04.930Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:29:04.931Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:29:04.933Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:29:08.098Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.148Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["780413d0-bf30-11ea-b12b-3b1f34ccf78a","Joel Wiza","Ofelia_McClure@yahoo.com","$2a$08$7Vd6DILR.hW3nwslm8wyOu8W7C0OA48jfH0vF6FUWZWQUxFigfv6q","2020-07-06 02:29:08.110 +00:00","2020-07-06 02:29:08.110 +00:00"]
-2020-07-06T02:29:08.178Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Ofelia_McClure@yahoo.com' LIMIT 1;" 
-2020-07-06T02:29:08.206Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.234Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["7813cb40-bf30-11ea-b12b-3b1f34ccf78a","Joel Wiza","Ofelia_McClure@yahoo.com","$2a$08$B/QFRxkIF84gkIp/FQoJ4eEDM7ClyYJxbQiaBgOrU1pa2mXp0bgam","2020-07-06 02:29:08.213 +00:00","2020-07-06 02:29:08.213 +00:00"]
-2020-07-06T02:29:08.246Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Ofelia_McClure@yahoo.com' LIMIT 1;" 
-2020-07-06T02:29:08.266Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.288Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["781ca4e0-bf30-11ea-b12b-3b1f34ccf78a","Joel Wiza","Ofelia_McClure@yahoo.com","$2a$08$8GTVaRyAskhKA0BeUjhTzuNln2qYFqISYlU45HseFkyEYp0Y.K7ku","2020-07-06 02:29:08.270 +00:00","2020-07-06 02:29:08.270 +00:00"]
-2020-07-06T02:29:08.296Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Ofelia_McClure@yahoo.com' LIMIT 1;" 
-2020-07-06T02:29:08.316Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.340Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["78244600-bf30-11ea-b12b-3b1f34ccf78a","Joel Wiza","Ofelia_McClure@yahoo.com","$2a$08$OC626swArXB2/Z2Y388s.eKTMpSIPxwl1IHU5JWZ/zD8aR9vUZRfi","2020-07-06 02:29:08.321 +00:00","2020-07-06 02:29:08.321 +00:00"]
-2020-07-06T02:29:08.350Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.357Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.367Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.417Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["782cf890-bf30-11ea-adcd-cdb83978b50f","Mia Klein","Kallie_Steuber53@gmail.com","$2a$08$Ccv/SXRMf/OO7xMXGcgvheDCYxYW/VsxR1WNePwf8N6kPAcr57DDO","2020-07-06 02:29:08.379 +00:00","2020-07-06 02:29:08.379 +00:00"]
-2020-07-06T02:29:08.442Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:29:08.466Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["78377fe0-bf30-11ea-adcd-cdb83978b50f","Pasquale Hagenes","Miracle_Mante60@hotmail.com","$2a$08$JWjtFYAiLw.LkBkaWxig5.AiHDEorNDQYYLA.b3L7qtVexHXKHOvG","2020-07-06 02:29:08.446 +00:00","2020-07-06 02:29:08.446 +00:00"]
-2020-07-06T02:31:31.607Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:31:31.610Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:31:31.611Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
-2020-07-06T02:31:31.611Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:31:31.612Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:31:31.612Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
-2020-07-06T02:31:31.617Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:31:31.617Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:31:31.617Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:31:31.620Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:31:34.989Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:31:35.038Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["cf91dd80-bf30-11ea-8497-93545267ba85","Maye Krajcik","Reynold_Heidenreich@gmail.com","$2a$08$nztzINCP92sA8X6XrDTX5ekDALLf7sWFlajttHmI61m4SOkTGjVxG","2020-07-06 02:31:35.002 +00:00","2020-07-06 02:31:35.002 +00:00"]
-2020-07-06T02:31:35.055Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:31:35.068Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Reynold_Heidenreich@gmail.com' LIMIT 1;" 
-2020-07-06T02:31:35.081Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:31:35.100Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["cf9b5360-bf30-11ea-b96e-5f22fdda99e1","Ronaldo","meu@email.com","$2a$08$i8Nlm8tLhWFce1DovmKKn.QGbis.sUCxtOIf30Vg2ux1xQjiGA8Nm","2020-07-06 02:31:35.063 +00:00","2020-07-06 02:31:35.063 +00:00"]
-2020-07-06T02:31:35.110Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["cf9ed5d0-bf30-11ea-8497-93545267ba85","Maye Krajcik","Reynold_Heidenreich@gmail.com","$2a$08$7KCkp6vgKiTw.097KIY3eObJSHnyiprsTtiNnFZVe2fFVtXWs8rVC","2020-07-06 02:31:35.085 +00:00","2020-07-06 02:31:35.085 +00:00"]
-2020-07-06T02:31:35.119Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Reynold_Heidenreich@gmail.com' LIMIT 1;" 
-2020-07-06T02:31:35.140Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:31:35.163Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["cfa7d680-bf30-11ea-8497-93545267ba85","Maye Krajcik","Reynold_Heidenreich@gmail.com","$2a$08$aoh6ue5gDhfgqKQ6ACcwDOacdmY/rqXFGzfc81XBPo6rL6BbxK0ue","2020-07-06 02:31:35.144 +00:00","2020-07-06 02:31:35.144 +00:00"]
-2020-07-06T02:31:35.170Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Reynold_Heidenreich@gmail.com' LIMIT 1;" 
-2020-07-06T02:31:35.193Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:31:35.216Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["cfafecd0-bf30-11ea-8497-93545267ba85","Maye Krajcik","Reynold_Heidenreich@gmail.com","$2a$08$x9BREq0pmVYFapL2Lb8ZsOykUAWgnTc4VqzPwtxeh8r4Hp6QoMDf6","2020-07-06 02:31:35.198 +00:00","2020-07-06 02:31:35.198 +00:00"]
-2020-07-06T02:31:35.226Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:31:35.234Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:15.443Z INFO action: "SELECT 1+1 AS result" 
-2020-07-06T02:32:15.445Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
-2020-07-06T02:32:15.446Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
-2020-07-06T02:32:15.447Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:32:15.447Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:32:15.448Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
-2020-07-06T02:32:15.452Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
-2020-07-06T02:32:15.453Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
-2020-07-06T02:32:15.453Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
-2020-07-06T02:32:15.456Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
-2020-07-06T02:32:18.615Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:18.674Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["e9934660-bf30-11ea-a36c-6714adbe3d8d","Ronaldo","meu@email.com","$2a$08$16vmX.yPcg2tC1XsS/Qu5OrVhV6MJQvR6lQYeOf7JUbZQis/4ZTUC","2020-07-06 02:32:18.632 +00:00","2020-07-06 02:32:18.632 +00:00"]
-2020-07-06T02:32:18.760Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:18.806Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["e9a85500-bf30-11ea-a4eb-41fd75f64ec7","Roberta Brown","Maybelle12@gmail.com","$2a$08$ulaVyX8Hew60ugylG4Gicu0OY2hyi1DLowXlnCDR9M2eiCwdQ5tUG","2020-07-06 02:32:18.770 +00:00","2020-07-06 02:32:18.770 +00:00"]
-2020-07-06T02:32:18.827Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:18.836Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Maybelle12@gmail.com' LIMIT 1;" 
-2020-07-06T02:32:18.848Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:18.875Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["e9b52640-bf30-11ea-a4eb-41fd75f64ec7","Roberta Brown","Maybelle12@gmail.com","$2a$08$8QRZGKe.h0MhMbkUzfZ5S.Z3buLVtqvqUbq1O1lA0u97KEzudSrPW","2020-07-06 02:32:18.852 +00:00","2020-07-06 02:32:18.852 +00:00"]
-2020-07-06T02:32:18.884Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Maybelle12@gmail.com' LIMIT 1;" 
-2020-07-06T02:32:18.905Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:18.928Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["e9bdd8d0-bf30-11ea-a4eb-41fd75f64ec7","Roberta Brown","Maybelle12@gmail.com","$2a$08$2ZhqgDGO8cXTaV2Ladgtp.YzpQk8f6XVjXDwVwCGaCpbZ4SVaNU2m","2020-07-06 02:32:18.909 +00:00","2020-07-06 02:32:18.909 +00:00"]
-2020-07-06T02:32:18.936Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Maybelle12@gmail.com' LIMIT 1;" 
-2020-07-06T02:32:18.959Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:18.981Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["e9c61630-bf30-11ea-a4eb-41fd75f64ec7","Roberta Brown","Maybelle12@gmail.com","$2a$08$bT6T0ZEG3JZS9ELyHocABeoUcogmu59TI29wQQ6ND6LGmPwNK9e.2","2020-07-06 02:32:18.963 +00:00","2020-07-06 02:32:18.963 +00:00"]
-2020-07-06T02:32:18.992Z INFO action: "DELETE FROM `Users`" 
-2020-07-06T02:32:19.000Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:43.984Z INFO action: "SELECT 1+1 AS result" 
+2020-07-06T04:22:43.987Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
+2020-07-06T04:22:43.988Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
+2020-07-06T04:22:43.988Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:22:43.988Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:22:43.989Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
+2020-07-06T04:22:43.993Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:22:43.994Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:22:43.994Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:22:43.997Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:22:47.106Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:47.168Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["58775850-bf40-11ea-bdbd-b9c474ce9118","Ronaldo","meu@email.com","$2a$08$3kz9eBTWSOewZcPXLx7b8O2kTN0zAu0/Jc8uXA.VuWiEgSrWJ6aG6","2020-07-06 04:22:47.126 +00:00","2020-07-06 04:22:47.126 +00:00"]
+2020-07-06T04:22:47.319Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:47.379Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["58971550-bf40-11ea-b5fa-61ee28054ff9","Camryn Stehr","Jaylon11@yahoo.com","$2a$08$0ox4IaObyfFz271PwYgKdu.ZU9Qp.Yw4HPBp83dXN9HJKV7uBXWjG","2020-07-06 04:22:47.334 +00:00","2020-07-06 04:22:47.334 +00:00"]
+2020-07-06T04:22:47.425Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["58a1eac0-bf40-11ea-b5fa-61ee28054ff9","Camryn Stehr","Jaylon11@yahoo.com","$2a$08$8gXxNyEmb6W86OtNNpHIveBsxWXVDUiDCTw56j15kRXRo3KYW3fV6","2020-07-06 04:22:47.404 +00:00","2020-07-06 04:22:47.404 +00:00"]
+2020-07-06T04:22:47.427Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Jaylon11@yahoo.com","origin":"DB","instance":{"id":"58a1eac0-bf40-11ea-b5fa-61ee28054ff9","name":"Camryn Stehr","email":"Jaylon11@yahoo.com","password":"94DDXfFvKh5DyNJ","updatedAt":"2020-07-06T04:22:47.404Z","createdAt":"2020-07-06T04:22:47.404Z","passwordHash":"$2a$08$8gXxNyEmb6W86OtNNpHIveBsxWXVDUiDCTw56j15kRXRo3KYW3fV6"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:22:47.434Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:47.466Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["58a80540-bf40-11ea-b5fa-61ee28054ff9","Wallace Hegmann","Annette98@gmail.com","$2a$08$Lf8h.jismCofhCQurGDJoOnN78S.sA2GCL35m7ZquvWQCegymA05m","2020-07-06 04:22:47.444 +00:00","2020-07-06 04:22:47.444 +00:00"]
+2020-07-06T04:22:47.657Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:47.707Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["58c9be10-bf40-11ea-89f4-f38e32a97884","Arturo Larkin","Camylle.Kertzmann55@yahoo.com","$2a$08$NJEbSHCNxNM./IjdtjX/DOAp63TnoXdF18C9WA3BgJZO/kKl0rZfi","2020-07-06 04:22:47.667 +00:00","2020-07-06 04:22:47.667 +00:00"]
+2020-07-06T04:22:47.749Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Camylle.Kertzmann55@yahoo.com' LIMIT 1;" 
+2020-07-06T04:22:47.803Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:47.846Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["58e07a60-bf40-11ea-89f4-f38e32a97884","Arturo Larkin","Camylle.Kertzmann55@yahoo.com","$2a$08$BkE9qvLLLi47j0zc2ODfA.Cy5FBlD7eYQ6l6267Dao3n1XhpkeEgW","2020-07-06 04:22:47.814 +00:00","2020-07-06 04:22:47.814 +00:00"]
+2020-07-06T04:22:47.856Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Camylle.Kertzmann55@yahoo.com' LIMIT 1;" 
+2020-07-06T04:22:47.889Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:47.916Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["58ecd670-bf40-11ea-89f4-f38e32a97884","Arturo Larkin","Camylle.Kertzmann55@yahoo.com","$2a$08$Uz2Y7jwogJgyRML7MYEOtO/kgk9CyYD02aJ94M.gYcYvCVieiBMiG","2020-07-06 04:22:47.895 +00:00","2020-07-06 04:22:47.895 +00:00"]
+2020-07-06T04:22:47.936Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Camylle.Kertzmann55@yahoo.com' LIMIT 1;" 
+2020-07-06T04:22:53.034Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.087Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5bfe8340-bf40-11ea-b0d0-a57d7b650f32","Ronaldo","meu@email.com","$2a$08$SC5fq5GI39o9KqjwM8xT2.PcvF5xIahayJ/8mOLitylzFqaQliK3e","2020-07-06 04:22:53.045 +00:00","2020-07-06 04:22:53.045 +00:00"]
+2020-07-06T04:22:53.512Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.516Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.561Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c477320-bf40-11ea-ae54-0f481c08e4dc","Domenica Boyle","Genesis.Quigley56@yahoo.com","$2a$08$hdEfvFiCHJIxmwiUkzxOsuXaAAhFX7mv8bmeL2gFl1U2Jc30lGm7.","2020-07-06 04:22:53.523 +00:00","2020-07-06 04:22:53.523 +00:00"]
+2020-07-06T04:22:53.567Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c483670-bf40-11ea-a3ec-bdd1eb222ac1","Donnie Borer","Candace.Hermiston@hotmail.com","$2a$08$CNkfwirY7dg.UOEBQBxL1OA5Pe8lTBpfwscv3BBuoRDvAQGHgGij2","2020-07-06 04:22:53.528 +00:00","2020-07-06 04:22:53.528 +00:00"]
+2020-07-06T04:22:53.600Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Genesis.Quigley56@yahoo.com' LIMIT 1;" 
+2020-07-06T04:22:53.626Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c544460-bf40-11ea-a3ec-bdd1eb222ac1","Donnie Borer","Candace.Hermiston@hotmail.com","$2a$08$q/O4PfBwkbW3nNcCc.KrTuysv6gC1cBff8zAuSzjEs7/t3ktGqnhC","2020-07-06 04:22:53.606 +00:00","2020-07-06 04:22:53.606 +00:00"]
+2020-07-06T04:22:53.628Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Candace.Hermiston@hotmail.com","origin":"DB","instance":{"id":"5c544460-bf40-11ea-a3ec-bdd1eb222ac1","name":"Donnie Borer","email":"Candace.Hermiston@hotmail.com","password":"i7f2nLPVB6GwCv2","updatedAt":"2020-07-06T04:22:53.606Z","createdAt":"2020-07-06T04:22:53.606Z","passwordHash":"$2a$08$q/O4PfBwkbW3nNcCc.KrTuysv6gC1cBff8zAuSzjEs7/t3ktGqnhC"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:22:53.634Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.636Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.663Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c594d70-bf40-11ea-ae54-0f481c08e4dc","Domenica Boyle","Genesis.Quigley56@yahoo.com","$2a$08$Xk1cE9sBUAFRoCGCkwYmu.PcNe6Wa9kpMPg7vSuQs4EqlDtZKPTpq","2020-07-06 04:22:53.640 +00:00","2020-07-06 04:22:53.640 +00:00"]
+2020-07-06T04:22:53.668Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c5a10c0-bf40-11ea-a3ec-bdd1eb222ac1","Milo Lynch","Jade16@yahoo.com","$2a$08$l/Dzf/XwQSXQEzB2kV3JZuVk1MWgJmDS7nKvRkSAxl/0w/Z.L.smy","2020-07-06 04:22:53.644 +00:00","2020-07-06 04:22:53.644 +00:00"]
+2020-07-06T04:22:53.679Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Genesis.Quigley56@yahoo.com' LIMIT 1;" 
+2020-07-06T04:22:53.702Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.724Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c6386a0-bf40-11ea-ae54-0f481c08e4dc","Domenica Boyle","Genesis.Quigley56@yahoo.com","$2a$08$cmFtclwM0vESjyDxu/xRseJFTmSMjHBgL8RZd9LfJ78fx9.E0AiIq","2020-07-06 04:22:53.706 +00:00","2020-07-06 04:22:53.706 +00:00"]
+2020-07-06T04:22:53.734Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Genesis.Quigley56@yahoo.com' LIMIT 1;" 
+2020-07-06T04:22:53.755Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.779Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c6b75e0-bf40-11ea-ae54-0f481c08e4dc","Domenica Boyle","Genesis.Quigley56@yahoo.com","$2a$08$3xFmDeMZqP.OSuiRoFocw.dJjpu29.6jJPQWfs0weXC03ON2RMG3u","2020-07-06 04:22:53.759 +00:00","2020-07-06 04:22:53.759 +00:00"]
+2020-07-06T04:22:53.794Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.806Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.815Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:22:53.840Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["5c74ebc0-bf40-11ea-ae54-0f481c08e4dc","Domenica Boyle","Genesis.Quigley56@yahoo.com","$2a$08$./POs4bqMn9YzGMmJr5N8.uDTexWjCb6m5GaEULRmKzyMFZh.5kve","2020-07-06 04:22:53.820 +00:00","2020-07-06 04:22:53.820 +00:00"]
+2020-07-06T04:23:41.876Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:41.935Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["791c9570-bf40-11ea-8896-796d5f6c6941","Ronaldo","meu@email.com","$2a$08$VUwTxs854ewlVQVAEaFh2uryoUABxNjCVmMlKz9pTqbpk4mzy1RwG","2020-07-06 04:23:41.896 +00:00","2020-07-06 04:23:41.896 +00:00"]
+2020-07-06T04:23:42.120Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.171Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["79404a10-bf40-11ea-91fa-d1774feb79a0","Lonny Kuphal","Alyce.Grant@gmail.com","$2a$08$DMc9oJXhnCklOeJIF2Oia.e/X.cceacK3Fi8vH3dkcUY8W93gdnH6","2020-07-06 04:23:42.131 +00:00","2020-07-06 04:23:42.131 +00:00"]
+2020-07-06T04:23:42.216Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["794a8340-bf40-11ea-91fa-d1774feb79a0","Lonny Kuphal","Alyce.Grant@gmail.com","$2a$08$Gwzj73jxuxbRLoXKxgbUZOSEhA5I7yIlDWF38ietCjpa9JoPkHZ/G","2020-07-06 04:23:42.196 +00:00","2020-07-06 04:23:42.196 +00:00"]
+2020-07-06T04:23:42.219Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Alyce.Grant@gmail.com","origin":"DB","instance":{"id":"794a8340-bf40-11ea-91fa-d1774feb79a0","name":"Lonny Kuphal","email":"Alyce.Grant@gmail.com","password":"4hBai4wSbCBWhke","updatedAt":"2020-07-06T04:23:42.196Z","createdAt":"2020-07-06T04:23:42.196Z","passwordHash":"$2a$08$Gwzj73jxuxbRLoXKxgbUZOSEhA5I7yIlDWF38ietCjpa9JoPkHZ/G"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:23:42.227Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.258Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["79509dc0-bf40-11ea-91fa-d1774feb79a0","Evelyn Stokes","Brain.Padberg72@hotmail.com","$2a$08$9Um8UkVEoZ1B4tG2QPxjyO/kZbNYNoSQwfenvxFL8ML5FqZBh9ibu","2020-07-06 04:23:42.236 +00:00","2020-07-06 04:23:42.236 +00:00"]
+2020-07-06T04:23:42.413Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.465Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["796cff60-bf40-11ea-9a85-e1ab8a9e6ba6","Tre McGlynn MD","Max.Berge@hotmail.com","$2a$08$TV2x8uA/Or38fwsXr14aAe3COna7OTJulmnA4KCF2.UocQVafWraS","2020-07-06 04:23:42.423 +00:00","2020-07-06 04:23:42.423 +00:00"]
+2020-07-06T04:23:42.502Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Max.Berge@hotmail.com' LIMIT 1;" 
+2020-07-06T04:23:42.534Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.560Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["797eb2a0-bf40-11ea-9a85-e1ab8a9e6ba6","Tre McGlynn MD","Max.Berge@hotmail.com","$2a$08$bJ7ueASeNL3uYFc2VsKteuD79B7eiQKzQ5ULXATEaU8dQYcRxPAsC","2020-07-06 04:23:42.539 +00:00","2020-07-06 04:23:42.539 +00:00"]
+2020-07-06T04:23:42.571Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Max.Berge@hotmail.com' LIMIT 1;" 
+2020-07-06T04:23:42.596Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.618Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["79882880-bf40-11ea-9a85-e1ab8a9e6ba6","Tre McGlynn MD","Max.Berge@hotmail.com","$2a$08$06lHmPQvfFqNlVSFlQ7b0OPz3jXmaoyULcV/pv860aKXVlRJWRhqW","2020-07-06 04:23:42.600 +00:00","2020-07-06 04:23:42.600 +00:00"]
+2020-07-06T04:23:42.625Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Max.Berge@hotmail.com' LIMIT 1;" 
+2020-07-06T04:23:42.647Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.670Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["798ff0b0-bf40-11ea-9a85-e1ab8a9e6ba6","Tre McGlynn MD","Max.Berge@hotmail.com","$2a$08$19seGFNtxIbBvhJJr74d4.nO6t4MEcodkyOWOijfTQA1RfDh5hNXO","2020-07-06 04:23:42.651 +00:00","2020-07-06 04:23:42.651 +00:00"]
+2020-07-06T04:23:42.684Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.692Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.700Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:23:42.722Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["7997dff0-bf40-11ea-9a85-e1ab8a9e6ba6","Tre McGlynn MD","Max.Berge@hotmail.com","$2a$08$dxQgfLEEg8G9.8hzxEqm7.lB/dNLJZMSi3sSiDnrJsiAND7zOjoke","2020-07-06 04:23:42.703 +00:00","2020-07-06 04:23:42.703 +00:00"]
+2020-07-06T04:24:18.900Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?);" binds: ["8e5f3dc0-bf40-11ea-b99f-c16a69de3965","Ronaldo","meu@novos.email","$2a$08$vsOyYYs7gaagorPhSliTi.jtJH6YEs7JDCLGdb3bnsf5R2e72OxcG","2020-07-06 04:24:17","2020-07-06 04:24:17"]
+2020-07-06T04:24:19.181Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"meu@novos.email","origin":"DB","instance":{"id":"8e5f3dc0-bf40-11ea-b99f-c16a69de3965","name":"Ronaldo","email":"meu@novos.email","password":"ojoj","updatedAt":"2020-07-06T04:24:17.565Z","createdAt":"2020-07-06T04:24:17.565Z","passwordHash":"$2a$08$vsOyYYs7gaagorPhSliTi.jtJH6YEs7JDCLGdb3bnsf5R2e72OxcG"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:24:52.483Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:24:52.547Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a3320d40-bf40-11ea-a225-a3d99cb6f86c","Ronaldo","meu@email.com","$2a$08$RQboGoU9HA/t3yDGXN9qsesva5Zi69dJHSQoaIQu5Y2ci.cbdNbwO","2020-07-06 04:24:52.502 +00:00","2020-07-06 04:24:52.502 +00:00"]
+2020-07-06T04:24:52.986Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:24:53.036Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a37e0a60-bf40-11ea-bcc4-5519bfa0ce6b","Deron Satterfield","Mariano79@yahoo.com","$2a$08$dKgrVmkB11uiaT8O1IeiFuTKbajErrbzqLkhGSdQrZfEr4nVNaJjC","2020-07-06 04:24:52.999 +00:00","2020-07-06 04:24:52.999 +00:00"]
+2020-07-06T04:24:53.084Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a3884390-bf40-11ea-bcc4-5519bfa0ce6b","Deron Satterfield","Mariano79@yahoo.com","$2a$08$BwW5ssRrU44XbblUXJ6kX.NQ76a0pAXC75ubYbuK04EYvM20Qogle","2020-07-06 04:24:53.065 +00:00","2020-07-06 04:24:53.065 +00:00"]
+2020-07-06T04:24:53.086Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Mariano79@yahoo.com","origin":"DB","instance":{"id":"a3884390-bf40-11ea-bcc4-5519bfa0ce6b","name":"Deron Satterfield","email":"Mariano79@yahoo.com","password":"xFlLXIIHoqti8uL","updatedAt":"2020-07-06T04:24:53.065Z","createdAt":"2020-07-06T04:24:53.065Z","passwordHash":"$2a$08$BwW5ssRrU44XbblUXJ6kX.NQ76a0pAXC75ubYbuK04EYvM20Qogle"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:24:53.096Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:24:53.126Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a38e5e10-bf40-11ea-bcc4-5519bfa0ce6b","Kari Smith","Giovanni23@hotmail.com","$2a$08$4QnkVCsrfYUn/Q5GYYqKSexx9ozACCWD.Qo5y6wMR/vJHTjyLQxci","2020-07-06 04:24:53.106 +00:00","2020-07-06 04:24:53.106 +00:00"]
+2020-07-06T04:24:59.278Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?);" binds: ["a67921f0-bf40-11ea-96bc-23209183ff4d","Ronaldo","meu@novos.email","$2a$08$4mB2voDMGgV/.1bbUzUo6ucb5DSPIyV96gtI9VE1kL0oirb0tlIi.","2020-07-06 04:24:57","2020-07-06 04:24:57"]
+2020-07-06T04:24:59.561Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"meu@novos.email","origin":"DB","instance":{"id":"a67921f0-bf40-11ea-96bc-23209183ff4d","name":"Ronaldo","email":"meu@novos.email","password":"ojoj","updatedAt":"2020-07-06T04:24:57.999Z","createdAt":"2020-07-06T04:24:57.999Z","passwordHash":"$2a$08$4mB2voDMGgV/.1bbUzUo6ucb5DSPIyV96gtI9VE1kL0oirb0tlIi."},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:25:51.336Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:51.394Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["c6462780-bf40-11ea-a7c3-5b049fa74337","Ronaldo","meu@email.com","$2a$08$p4grqhAJncgFQMx4wrNd6uaVTiKKd9DFiRzBNVA4t7488eTucYiFq","2020-07-06 04:25:51.353 +00:00","2020-07-06 04:25:51.353 +00:00"]
+2020-07-06T04:25:51.577Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:51.641Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["c66bb0e0-bf40-11ea-b7a1-5f70d68eb82c","Kobe Koss","Christa.Balistreri@hotmail.com","$2a$08$nV8eNMEt.qzGui85iFA4Ied3vHopk0AISq/JAExz.wpx3OuzA63CG","2020-07-06 04:25:51.599 +00:00","2020-07-06 04:25:51.599 +00:00"]
+2020-07-06T04:25:51.692Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["c676d470-bf40-11ea-b7a1-5f70d68eb82c","Kobe Koss","Christa.Balistreri@hotmail.com","$2a$08$LGWup52Aacn6kCokOfmOQemk5ikBv9bt.fpIHABHE/sd7Gh8g5Owq","2020-07-06 04:25:51.671 +00:00","2020-07-06 04:25:51.671 +00:00"]
+2020-07-06T04:25:51.695Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Christa.Balistreri@hotmail.com","origin":"DB","instance":{"id":"c676d470-bf40-11ea-b7a1-5f70d68eb82c","name":"Kobe Koss","email":"Christa.Balistreri@hotmail.com","password":"ax4mIx06g2Iapjh","updatedAt":"2020-07-06T04:25:51.671Z","createdAt":"2020-07-06T04:25:51.671Z","passwordHash":"$2a$08$LGWup52Aacn6kCokOfmOQemk5ikBv9bt.fpIHABHE/sd7Gh8g5Owq"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:25:51.707Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:51.740Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["c67e0060-bf40-11ea-b7a1-5f70d68eb82c","Leon Carroll","Trevion.Schmitt26@yahoo.com","$2a$08$BSrfO8P/d4KmZvi1roNBN.f507p0y3v.agf8rPFt9bqkOCl6mKk4e","2020-07-06 04:25:51.719 +00:00","2020-07-06 04:25:51.719 +00:00"]
+2020-07-06T04:25:51.880Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:51.925Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["c697f100-bf40-11ea-8698-e963ed331be8","Hipolito Jones","Aubree.OConnell42@yahoo.com","$2a$08$uSlsFcIHUq2AH3E3lpj90en7kGKkd2ay6kljHyXMEHBZiZxpLw1le","2020-07-06 04:25:51.889 +00:00","2020-07-06 04:25:51.889 +00:00"]
+2020-07-06T04:25:51.959Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Aubree.OConnell42@yahoo.com' LIMIT 1;" 
+2020-07-06T04:25:51.994Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:57.823Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:57.878Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca2361b0-bf40-11ea-be7b-817e487255c6","Ronaldo","meu@email.com","$2a$08$vzIVw.7ZILs038XERT/rfOhIqfc9VO4nxqvMXDvkTJ2zKPoLMYiXm","2020-07-06 04:25:57.836 +00:00","2020-07-06 04:25:57.836 +00:00"]
+2020-07-06T04:25:58.072Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.127Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca48eb10-bf40-11ea-9a1a-232c3ca0d3b4","Mariane Eichmann Jr.","Monique.Lind@gmail.com","$2a$08$kJ.qhNJlFQHRz3F.ZeYs.eZ9HvhB2q7fE/xohBmqr4v0SxJZzV4gW","2020-07-06 04:25:58.082 +00:00","2020-07-06 04:25:58.082 +00:00"]
+2020-07-06T04:25:58.183Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca54f900-bf40-11ea-9a1a-232c3ca0d3b4","Mariane Eichmann Jr.","Monique.Lind@gmail.com","$2a$08$qus02.d.x44/qsgxE8ge1.BztqMX3GnJCnzKgirsuHKsvmYKXKaSS","2020-07-06 04:25:58.160 +00:00","2020-07-06 04:25:58.160 +00:00"]
+2020-07-06T04:25:58.185Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Monique.Lind@gmail.com","origin":"DB","instance":{"id":"ca54f900-bf40-11ea-9a1a-232c3ca0d3b4","name":"Mariane Eichmann Jr.","email":"Monique.Lind@gmail.com","password":"AruquGFwe4p5xDU","updatedAt":"2020-07-06T04:25:58.160Z","createdAt":"2020-07-06T04:25:58.160Z","passwordHash":"$2a$08$qus02.d.x44/qsgxE8ge1.BztqMX3GnJCnzKgirsuHKsvmYKXKaSS"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:25:58.197Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.224Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca5bafc0-bf40-11ea-9a1a-232c3ca0d3b4","Ms. Jovan Monahan","Wiley.Bahringer@gmail.com","$2a$08$xeu0l441PhLEffz2G/4H.OCU2pWXzKhESrkpQNCOcpvLcl5kxr22.","2020-07-06 04:25:58.204 +00:00","2020-07-06 04:25:58.204 +00:00"]
+2020-07-06T04:25:58.393Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.441Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca79bf10-bf40-11ea-a901-cb52a944bf41","Madison Kautzer","Agustina_Wuckert@hotmail.com","$2a$08$ZhomPQNSjGMjl2DeGgKO4e69B9aLGMLd86RT9ikagVOlMH1cWngGO","2020-07-06 04:25:58.402 +00:00","2020-07-06 04:25:58.402 +00:00"]
+2020-07-06T04:25:58.471Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Agustina_Wuckert@hotmail.com' LIMIT 1;" 
+2020-07-06T04:25:58.503Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.531Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca8a12c0-bf40-11ea-a901-cb52a944bf41","Madison Kautzer","Agustina_Wuckert@hotmail.com","$2a$08$8E5TzYVuT93zWWCh/gthgOvHoQY9NFeu0TKTzpGNhT5muofAupAf.","2020-07-06 04:25:58.508 +00:00","2020-07-06 04:25:58.508 +00:00"]
+2020-07-06T04:25:58.541Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Agustina_Wuckert@hotmail.com' LIMIT 1;" 
+2020-07-06T04:25:58.564Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.586Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca933a80-bf40-11ea-a901-cb52a944bf41","Madison Kautzer","Agustina_Wuckert@hotmail.com","$2a$08$PmW.7e/pVtfEnx07aTORWuOnw9p9uqk0FEKXDZpd.Nj1EBeks5hf2","2020-07-06 04:25:58.569 +00:00","2020-07-06 04:25:58.569 +00:00"]
+2020-07-06T04:25:58.594Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Agustina_Wuckert@hotmail.com' LIMIT 1;" 
+2020-07-06T04:25:58.618Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.644Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["ca9b77e0-bf40-11ea-a901-cb52a944bf41","Madison Kautzer","Agustina_Wuckert@hotmail.com","$2a$08$E8M2WaYQuK6D1etJelxYU./JsunI/cBHtWpwIrcjhsQiADZnHEsbm","2020-07-06 04:25:58.623 +00:00","2020-07-06 04:25:58.623 +00:00"]
+2020-07-06T04:25:58.653Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.661Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.668Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:25:58.691Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["caa2cae0-bf40-11ea-a901-cb52a944bf41","Madison Kautzer","Agustina_Wuckert@hotmail.com","$2a$08$hN9i2l8ZD8MtP6rSjadr.ePXc9sGsI4QYBReSdNOb03jks.q2wLZq","2020-07-06 04:25:58.670 +00:00","2020-07-06 04:25:58.670 +00:00"]
+2020-07-06T04:26:04.959Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?);" binds: ["cd843ff0-bf40-11ea-aa73-b70a64cd520d","Ronaldo","meu@novos.email","$2a$08$cwzBbU.jdipM7rDEmJ26vOi9Ij51eivgsW1dgnQuCPdUGK9M/Dd4G","2020-07-06 04:26:03","2020-07-06 04:26:03"]
+2020-07-06T04:26:05.235Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"meu@novos.email","origin":"DB","instance":{"id":"cd843ff0-bf40-11ea-aa73-b70a64cd520d","name":"Ronaldo","email":"meu@novos.email","password":"ojoj","updatedAt":"2020-07-06T04:26:03.504Z","createdAt":"2020-07-06T04:26:03.504Z","passwordHash":"$2a$08$cwzBbU.jdipM7rDEmJ26vOi9Ij51eivgsW1dgnQuCPdUGK9M/Dd4G"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:27:04.790Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?);" binds: ["f1419280-bf40-11ea-ae21-556a7d2099d4","Ronaldo","meu@novos.email","$2a$08$ZkYC5x6gQdibRt.RriapO.kPLt5sfn0GV6AljvN2ffqto8mw59nny","2020-07-06 04:27:03","2020-07-06 04:27:03"]
+2020-07-06T04:27:05.074Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"meu@novos.email","origin":"DB","instance":{"id":"f1419280-bf40-11ea-ae21-556a7d2099d4","name":"Ronaldo","email":"meu@novos.email","password":"ojoj","updatedAt":"2020-07-06T04:27:03.465Z","createdAt":"2020-07-06T04:27:03.465Z","passwordHash":"$2a$08$ZkYC5x6gQdibRt.RriapO.kPLt5sfn0GV6AljvN2ffqto8mw59nny"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:27:20.045Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?);" binds: ["fa609ff0-bf40-11ea-977f-83f971cd3913","Ronaldo","meu@novos.email","$2a$08$aE0m1QRBXThbigwklMEWHOdIrk/wzQLGIEGgTlhJ6fRY19elxZ7p6","2020-07-06 04:27:18","2020-07-06 04:27:18"]
+2020-07-06T04:27:20.318Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"meu@novos.email","origin":"DB","instance":{"id":"fa609ff0-bf40-11ea-977f-83f971cd3913","name":"Ronaldo","email":"meu@novos.email","password":"ojoj","updatedAt":"2020-07-06T04:27:18.768Z","createdAt":"2020-07-06T04:27:18.768Z","passwordHash":"$2a$08$aE0m1QRBXThbigwklMEWHOdIrk/wzQLGIEGgTlhJ6fRY19elxZ7p6"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:31:06.420Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?);" binds: ["81390a80-bf41-11ea-ada1-4557f2e9adcf","Ronaldo","meu@novos.email","$2a$08$p5zpA6qZWTS3AU0LBCnMn.MEnBfcLf6d6z9A3SRlg5.DEL5Y8Ertu","2020-07-06 04:31:05","2020-07-06 04:31:05"]
+2020-07-06T04:31:06.698Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"meu@novos.email","origin":"DB","instance":{"id":"81390a80-bf41-11ea-ada1-4557f2e9adcf","name":"Ronaldo","email":"meu@novos.email","password":"ojoj","updatedAt":"2020-07-06T04:31:05.001Z","createdAt":"2020-07-06T04:31:05.001Z","passwordHash":"$2a$08$p5zpA6qZWTS3AU0LBCnMn.MEnBfcLf6d6z9A3SRlg5.DEL5Y8Ertu"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:31:14.491Z INFO action: "SELECT 1+1 AS result" 
+2020-07-06T04:31:14.494Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
+2020-07-06T04:31:14.495Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
+2020-07-06T04:31:14.495Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:14.496Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:14.496Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
+2020-07-06T04:31:14.501Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:31:14.502Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:14.502Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:14.505Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:31:17.659Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:17.714Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["88c67b70-bf41-11ea-a021-af36e1f549db","Ronaldo","meu@email.com","$2a$08$PHcTcHQEKRujo0oYENUwcesBhBBGOjUJEOF9yukHm8l5lVjrHevIG","2020-07-06 04:31:17.673 +00:00","2020-07-06 04:31:17.673 +00:00"]
+2020-07-06T04:31:17.894Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:17.947Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["88ea7e30-bf41-11ea-a991-e1ca3df6a018","Bulah Pagac","Summer.Rutherford78@gmail.com","$2a$08$jj2g5ugH1DPgIJJ6PHfii.6RTmSA6RNrtpOI8irfJJhy59UAJjyhW","2020-07-06 04:31:17.908 +00:00","2020-07-06 04:31:17.908 +00:00"]
+2020-07-06T04:31:17.994Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["88f4b760-bf41-11ea-a991-e1ca3df6a018","Bulah Pagac","Summer.Rutherford78@gmail.com","$2a$08$TZ.oKxk2CNunYorMVaprAO7.Ql4MTtDz54Wq8PDq0XtybwQUDkktW","2020-07-06 04:31:17.974 +00:00","2020-07-06 04:31:17.974 +00:00"]
+2020-07-06T04:31:17.998Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Summer.Rutherford78@gmail.com","origin":"DB","instance":{"id":"88f4b760-bf41-11ea-a991-e1ca3df6a018","name":"Bulah Pagac","email":"Summer.Rutherford78@gmail.com","password":"U5g5iD32gQplw9P","updatedAt":"2020-07-06T04:31:17.974Z","createdAt":"2020-07-06T04:31:17.974Z","passwordHash":"$2a$08$TZ.oKxk2CNunYorMVaprAO7.Ql4MTtDz54Wq8PDq0XtybwQUDkktW"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:31:18.013Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:18.045Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["88fc3170-bf41-11ea-a991-e1ca3df6a018","Sonia Murray","Claud21@yahoo.com","$2a$08$e9djSYvp2eLvFGuPr3D1vuhoNzhQGHmmrrpGyHDvR5NwhDI8sXAKe","2020-07-06 04:31:18.024 +00:00","2020-07-06 04:31:18.024 +00:00"]
+2020-07-06T04:31:18.200Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:18.249Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["8918ba20-bf41-11ea-9d44-4f281f1b7b05","Amir D'Amore","Brandyn18@hotmail.com","$2a$08$wA1tkf0M0EEIbwYFXENrIeR4/Q0Khnp3rts/5MZ4zYup8ddxRn8Ca","2020-07-06 04:31:18.211 +00:00","2020-07-06 04:31:18.211 +00:00"]
+2020-07-06T04:31:18.287Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Brandyn18@hotmail.com' LIMIT 1;" 
+2020-07-06T04:31:18.333Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:18.369Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["892d5390-bf41-11ea-9d44-4f281f1b7b05","Amir D'Amore","Brandyn18@hotmail.com","$2a$08$A6ZfqLfMOc1T35BQGedbqencRoWnt7rLCB1LMMahCHRZN0fwqwPcm","2020-07-06 04:31:18.346 +00:00","2020-07-06 04:31:18.346 +00:00"]
+2020-07-06T04:31:18.378Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Brandyn18@hotmail.com' LIMIT 1;" 
+2020-07-06T04:31:18.401Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:18.428Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["89367b50-bf41-11ea-9d44-4f281f1b7b05","Amir D'Amore","Brandyn18@hotmail.com","$2a$08$xpVFtq4hVisIeYAgvDu6qOLUP1h98kcc367pvt24UTA5M3YAz1Hz.","2020-07-06 04:31:18.405 +00:00","2020-07-06 04:31:18.405 +00:00"]
+2020-07-06T04:31:18.436Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Brandyn18@hotmail.com' LIMIT 1;" 
+2020-07-06T04:31:18.461Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:18.501Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["8940b480-bf41-11ea-9d44-4f281f1b7b05","Amir D'Amore","Brandyn18@hotmail.com","$2a$08$nmI9gV51UVwwsSy/3bFNI.OdwngzKcYBy8j66oP/q2/A/yAZLafBS","2020-07-06 04:31:18.474 +00:00","2020-07-06 04:31:18.474 +00:00"]
+2020-07-06T04:31:49.731Z INFO action: "SELECT 1+1 AS result" 
+2020-07-06T04:31:49.734Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
+2020-07-06T04:31:49.735Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
+2020-07-06T04:31:49.735Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:49.736Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:49.736Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
+2020-07-06T04:31:49.741Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:31:49.742Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:49.742Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:49.744Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:31:52.832Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:52.893Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9dbefb60-bf41-11ea-a2d4-bf73c6cce5c8","Ronaldo","meu@email.com","$2a$08$8CYK5Am1QrTlsWVLAo8jxO7ZnyZeFScgjrnnIwiFPbnsnX3BOgtyG","2020-07-06 04:31:52.855 +00:00","2020-07-06 04:31:52.855 +00:00"]
+2020-07-06T04:31:53.063Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.116Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9de03f00-bf41-11ea-9352-73519c22b654","Lue Hermiston","Naomi_Sipes@hotmail.com","$2a$08$Kt6rNYkQyG7SS8eQJ3zTIuWVv9kY0TY/XkYKelsjxwSOwU7FgOlce","2020-07-06 04:31:53.073 +00:00","2020-07-06 04:31:53.073 +00:00"]
+2020-07-06T04:31:53.163Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9deb1470-bf41-11ea-9352-73519c22b654","Lue Hermiston","Naomi_Sipes@hotmail.com","$2a$08$EXzVelGpO7EB/67Fx1UV1OmGxQctMfDmWPHiS52leCvT8qkOWv3Mi","2020-07-06 04:31:53.143 +00:00","2020-07-06 04:31:53.143 +00:00"]
+2020-07-06T04:31:53.166Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Naomi_Sipes@hotmail.com","origin":"DB","instance":{"id":"9deb1470-bf41-11ea-9352-73519c22b654","name":"Lue Hermiston","email":"Naomi_Sipes@hotmail.com","password":"tKwOYqLtLhZUI5u","updatedAt":"2020-07-06T04:31:53.143Z","createdAt":"2020-07-06T04:31:53.143Z","passwordHash":"$2a$08$EXzVelGpO7EB/67Fx1UV1OmGxQctMfDmWPHiS52leCvT8qkOWv3Mi"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:31:53.177Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.206Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9df17d10-bf41-11ea-9352-73519c22b654","Will Kuhic","Sedrick36@gmail.com","$2a$08$Y5KfnPKIZjjlonwAmCBHSudkzBQ/nM81F4qMi.lh8rISZcpsuNrym","2020-07-06 04:31:53.186 +00:00","2020-07-06 04:31:53.186 +00:00"]
+2020-07-06T04:31:53.386Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.436Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9e118830-bf41-11ea-8e4f-fb72ec9ee22b","Madison Stamm","Emerald_Hermann@yahoo.com","$2a$08$6bhjOl/HmojlBl0aJAONFes3ZXI/2Lgx2XWAsgoQASB0GFFIGvzzS","2020-07-06 04:31:53.396 +00:00","2020-07-06 04:31:53.396 +00:00"]
+2020-07-06T04:31:53.469Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Emerald_Hermann@yahoo.com' LIMIT 1;" 
+2020-07-06T04:31:53.498Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.523Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9e21dbe0-bf41-11ea-8e4f-fb72ec9ee22b","Madison Stamm","Emerald_Hermann@yahoo.com","$2a$08$7u3VJJV/qkBnhlBcroWRJ.NhhWiiU9hBI9w0JN/NZhigDes6sv18m","2020-07-06 04:31:53.502 +00:00","2020-07-06 04:31:53.502 +00:00"]
+2020-07-06T04:31:53.535Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Emerald_Hermann@yahoo.com' LIMIT 1;" 
+2020-07-06T04:31:53.558Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.582Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9e2b2ab0-bf41-11ea-8e4f-fb72ec9ee22b","Madison Stamm","Emerald_Hermann@yahoo.com","$2a$08$3XTRe0gJ50VQQH4SxFqX5.QpIjfeQ.eUMwk5GqtPnxWHid0As6u/i","2020-07-06 04:31:53.563 +00:00","2020-07-06 04:31:53.563 +00:00"]
+2020-07-06T04:31:53.590Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Emerald_Hermann@yahoo.com' LIMIT 1;" 
+2020-07-06T04:31:53.612Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.637Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9e334100-bf41-11ea-8e4f-fb72ec9ee22b","Madison Stamm","Emerald_Hermann@yahoo.com","$2a$08$wndnJPTjwB7aLgCBD/.7d.du3chUfj.mvIwI1vN3NkAClGHJbi7dC","2020-07-06 04:31:53.617 +00:00","2020-07-06 04:31:53.617 +00:00"]
+2020-07-06T04:31:53.646Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.654Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.661Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:53.685Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["9e3a9400-bf41-11ea-8e4f-fb72ec9ee22b","Madison Stamm","Emerald_Hermann@yahoo.com","$2a$08$1n5CH3zlSge2.HNVXOT0OeNdi4zZjzpleudDYExQpjo6Cz0mBV8jS","2020-07-06 04:31:53.665 +00:00","2020-07-06 04:31:53.665 +00:00"]
+2020-07-06T04:31:54.800Z INFO action: "SELECT 1+1 AS result" 
+2020-07-06T04:31:54.802Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
+2020-07-06T04:31:54.803Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
+2020-07-06T04:31:54.804Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:54.804Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:54.804Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
+2020-07-06T04:31:54.807Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:31:54.807Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:54.808Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:54.810Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:31:54.813Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:31:54.814Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:54.814Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:54.815Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:31:54.818Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:31:54.818Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:54.819Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:54.819Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:31:54.821Z INFO action: "DROP TABLE IF EXISTS `users`;" 
+2020-07-06T04:31:54.825Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:31:54.826Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:31:54.826Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:31:54.828Z INFO action: "DELETE FROM `SequelizeMeta` WHERE `name` = '20200703033356-update-users.js'" 
+2020-07-06T04:31:59.427Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:59.484Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a1ac1410-bf41-11ea-972d-0bb8a9bbba55","Ronaldo","meu@email.com","$2a$08$XWz6mjReBAwlhZ1/99dEdebPgyHj5/zr55AVca.yLtmuhQ/9qvjzO","2020-07-06 04:31:59.442 +00:00","2020-07-06 04:31:59.442 +00:00"]
+2020-07-06T04:31:59.647Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:59.694Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a1cc9460-bf41-11ea-bbd0-578c53202bc9","Judson Halvorson","Toney_Koss95@yahoo.com","$2a$08$C0q5lYpOJkW3xsiL1y2cb.9Vpy5QVJVxEVq2yA8RhSVP5e/riLhDK","2020-07-06 04:31:59.655 +00:00","2020-07-06 04:31:59.655 +00:00"]
+2020-07-06T04:31:59.698Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:59.741Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a1d6cd90-bf41-11ea-bbd0-578c53202bc9","Isai Wuckert","Lisa.White49@hotmail.com","$2a$08$04xIiKrxzjXR4ZcaNqIJw.XbqlDiHiMK0O.zXeDNhIeINOL5BJMjm","2020-07-06 04:31:59.721 +00:00","2020-07-06 04:31:59.721 +00:00"]
+2020-07-06T04:31:59.924Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:59.969Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a1f6d8b0-bf41-11ea-8909-17ebc1a1ffe4","Celestino Ritchie","Stephan_Fritsch69@hotmail.com","$2a$08$.63Fko/z7gTeyLVLTHeQ3exqpty70/qGaxX/TyKEKBpGp7HUxs2i.","2020-07-06 04:31:59.932 +00:00","2020-07-06 04:31:59.932 +00:00"]
+2020-07-06T04:31:59.975Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:31:59.996Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a1fdb680-bf41-11ea-8909-17ebc1a1ffe4","Celestino Ritchie","Stephan_Fritsch69@hotmail.com","$2a$08$YbyTyUMn/ku.TpPWlPqgh.ie/g66ZHWAHCKFJD40kWS2c/2Qze/ge","2020-07-06 04:31:59.976 +00:00","2020-07-06 04:31:59.976 +00:00"]
+2020-07-06T04:32:00.001Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:32:00.024Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a201fc40-bf41-11ea-8909-17ebc1a1ffe4","Celestino Ritchie","Stephan_Fritsch69@hotmail.com","$2a$08$T/26APFlA5ZoQmxIrDlX/e3aHtKCjZX1M8wPOWBJZNNKcbkbT3X0.","2020-07-06 04:32:00.004 +00:00","2020-07-06 04:32:00.004 +00:00"]
+2020-07-06T04:32:00.028Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:32:00.048Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a205ccd0-bf41-11ea-8909-17ebc1a1ffe4","Celestino Ritchie","Stephan_Fritsch69@hotmail.com","$2a$08$PGuynOdCS54YtGlHOjEB6.aXHEkwuBbG6uVVyixRjc8u2MbJVPCu6","2020-07-06 04:32:00.029 +00:00","2020-07-06 04:32:00.029 +00:00"]
+2020-07-06T04:32:00.051Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:32:00.071Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:32:00.076Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:32:00.097Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["a20d1fd0-bf41-11ea-8909-17ebc1a1ffe4","Celestino Ritchie","Stephan_Fritsch69@hotmail.com","$2a$08$Dyashg3G8ewR1PpG4kMNzO.tVEcHGuUm5XWVQ0.76qjm6YrVMHM.m","2020-07-06 04:32:00.077 +00:00","2020-07-06 04:32:00.077 +00:00"]
+2020-07-06T04:34:08.669Z INFO action: "SELECT 1+1 AS result" 
+2020-07-06T04:34:08.672Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
+2020-07-06T04:34:08.673Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
+2020-07-06T04:34:08.673Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:08.673Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:08.674Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
+2020-07-06T04:34:08.678Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:08.679Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:08.679Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:08.682Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:34:08.683Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:08.684Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:08.684Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:08.684Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:34:08.686Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:08.687Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:08.687Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:08.687Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:34:08.690Z INFO action: "CREATE TABLE IF NOT EXISTS `users` (`id` UUID NOT NULL PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `passwordHash` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);" 
+2020-07-06T04:34:08.697Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:08.698Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:08.698Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:08.702Z INFO action: "INSERT INTO `SequelizeMeta` (`name`) VALUES ($1);" binds: ["20200703033356-update-users.js"]
+2020-07-06T04:34:11.757Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:11.817Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f08c56d0-bf41-11ea-9d06-cbcf8ed0d604","Ronaldo","meu@email.com","$2a$08$2lqOGZM4b.CCSlwST55ol.7gl/bEpQ5wZEYalXU46aOqr2ms1OQqS","2020-07-06 04:34:11.775 +00:00","2020-07-06 04:34:11.775 +00:00"]
+2020-07-06T04:34:12.002Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.054Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f0b0cec0-bf41-11ea-8bb7-45222864b128","Lorenza Reichel","Gerard_Sipes@hotmail.com","$2a$08$mDA54mRhBbxn363F2jj8dOTKtGtoR8CJaafA0hW9i7T9O/G5d2u/O","2020-07-06 04:34:12.017 +00:00","2020-07-06 04:34:12.017 +00:00"]
+2020-07-06T04:34:12.102Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f0bb7d20-bf41-11ea-8bb7-45222864b128","Lorenza Reichel","Gerard_Sipes@hotmail.com","$2a$08$bN6dpk4Q2R5J8ns5TY9zuOqXpD90uokdtgEm9lMcS38F1U9fwE32q","2020-07-06 04:34:12.082 +00:00","2020-07-06 04:34:12.082 +00:00"]
+2020-07-06T04:34:12.104Z ERROR reason: "email must be unique" context:{"message":"email must be unique","type":"unique violation","path":"email","value":"Gerard_Sipes@hotmail.com","origin":"DB","instance":{"id":"f0bb7d20-bf41-11ea-8bb7-45222864b128","name":"Lorenza Reichel","email":"Gerard_Sipes@hotmail.com","password":"WcOJIVlEYixi1qZ","updatedAt":"2020-07-06T04:34:12.082Z","createdAt":"2020-07-06T04:34:12.082Z","passwordHash":"$2a$08$bN6dpk4Q2R5J8ns5TY9zuOqXpD90uokdtgEm9lMcS38F1U9fwE32q"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}
+2020-07-06T04:34:12.112Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.141Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f0c17090-bf41-11ea-8bb7-45222864b128","Kendall Gaylord III","Esmeralda_Spencer@yahoo.com","$2a$08$7yEUKZlGAI2FQ85ofm8ufeyUGYPVZUJyv8xeuWTQG2SDi2rNJizf2","2020-07-06 04:34:12.121 +00:00","2020-07-06 04:34:12.121 +00:00"]
+2020-07-06T04:34:12.301Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.350Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f0de6e70-bf41-11ea-b128-1786847f2ef5","Miss Jakayla Kulas","Chaz.Johnston42@gmail.com","$2a$08$Zk8/89lG0Vd.7fDrhx/AQ.1ad1kYvf1SMxzzvNwAV3ox.3i6LjMje","2020-07-06 04:34:12.312 +00:00","2020-07-06 04:34:12.312 +00:00"]
+2020-07-06T04:34:12.380Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Chaz.Johnston42@gmail.com' LIMIT 1;" 
+2020-07-06T04:34:12.408Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.436Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f0ee25e0-bf41-11ea-b128-1786847f2ef5","Miss Jakayla Kulas","Chaz.Johnston42@gmail.com","$2a$08$XtCO7Q4wIhW81A010xA7ce4g1x.XFScr/.aS3teVczQcHafaD2JJy","2020-07-06 04:34:12.414 +00:00","2020-07-06 04:34:12.414 +00:00"]
+2020-07-06T04:34:12.446Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Chaz.Johnston42@gmail.com' LIMIT 1;" 
+2020-07-06T04:34:12.467Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.489Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f0f6d870-bf41-11ea-b128-1786847f2ef5","Miss Jakayla Kulas","Chaz.Johnston42@gmail.com","$2a$08$mXQq/V.QrshuIuLQh7G/reit.LeH/4nrDY/kXfyvo9lkS3/m2MbPy","2020-07-06 04:34:12.471 +00:00","2020-07-06 04:34:12.471 +00:00"]
+2020-07-06T04:34:12.497Z INFO action: "SELECT `id`, `name`, `email`, `passwordHash`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'Chaz.Johnston42@gmail.com' LIMIT 1;" 
+2020-07-06T04:34:12.517Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.541Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f0fe7990-bf41-11ea-b128-1786847f2ef5","Miss Jakayla Kulas","Chaz.Johnston42@gmail.com","$2a$08$qHglm44OlP94pyMbX3lZzeNY26F.1iNGI/bDAza6vVAYuhTPwBPfS","2020-07-06 04:34:12.522 +00:00","2020-07-06 04:34:12.522 +00:00"]
+2020-07-06T04:34:12.551Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.559Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.566Z INFO action: "DELETE FROM `Users`" 
+2020-07-06T04:34:12.589Z INFO action: "INSERT INTO `Users` (`id`,`name`,`email`,`passwordHash`,`createdAt`,`updatedAt`) VALUES ($1,$2,$3,$4,$5,$6);" binds: ["f105cc90-bf41-11ea-b128-1786847f2ef5","Miss Jakayla Kulas","Chaz.Johnston42@gmail.com","$2a$08$alnFu.M/o4xzDdOI1uOSmuu35BR8admusmWZzEvUtqrfxc3nuRRH.","2020-07-06 04:34:12.569 +00:00","2020-07-06 04:34:12.569 +00:00"]
+2020-07-06T04:34:13.546Z INFO action: "SELECT 1+1 AS result" 
+2020-07-06T04:34:13.549Z INFO action: "SELECT name FROM `sqlite_master` WHERE type='table' and name!='sqlite_sequence';" 
+2020-07-06T04:34:13.550Z INFO action: "PRAGMA TABLE_INFO(`SequelizeMeta`);" 
+2020-07-06T04:34:13.550Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:13.550Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:13.551Z INFO action: "PRAGMA foreign_key_list(SequelizeMeta)" 
+2020-07-06T04:34:13.553Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:13.554Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:13.554Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:13.556Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:34:13.559Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:13.559Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:13.559Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:13.560Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:34:13.563Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:13.563Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:13.564Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:13.564Z INFO action: "SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;" 
+2020-07-06T04:34:13.569Z INFO action: "DROP TABLE IF EXISTS `users`;" 
+2020-07-06T04:34:13.576Z INFO action: "CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY);" 
+2020-07-06T04:34:13.576Z INFO action: "PRAGMA INDEX_LIST(`SequelizeMeta`)" 
+2020-07-06T04:34:13.576Z INFO action: "PRAGMA INDEX_INFO(`sqlite_autoindex_SequelizeMeta_1`)" 
+2020-07-06T04:34:13.578Z INFO action: "DELETE FROM `SequelizeMeta` WHERE `name` = '20200703033356-update-users.js'" 

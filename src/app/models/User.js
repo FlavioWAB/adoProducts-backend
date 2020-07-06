@@ -9,8 +9,14 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             primaryKey: true
         },
-        name: DataTypes.STRING,
-        email: DataTypes.STRING,
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         password: DataTypes.VIRTUAL,
         passwordHash: DataTypes.STRING
     }, {

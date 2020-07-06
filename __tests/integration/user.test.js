@@ -2,6 +2,8 @@
 const faker = require('../utils/faker');
 const app = require('../../src/app');
 const truncate = require('../utils/truncate');
+const factory = require('../utils/factories');
+const request = require('supertest');
 
 describe('User Management', () => {
     beforeEach(async () => {
@@ -10,24 +12,26 @@ describe('User Management', () => {
 
     it('should not create user with non-unique email', async () => {
         const user = faker.getUser();
+
         await factory.create('User', user);
 
         const response = await request(app)
-            .post('/user')
-            .send(user);
+            .post('/users')
+            .send(user).catch(err => console.log('errrooooo', err));
 
         expect(response.status).toBe(409);
+
     });
 
     it('should return user login data upon user creation', async () => {
         const user = faker.getUser();
 
         const response = await request(app)
-            .post('/user')
+            .post('/users')
             .send(user);
 
         expect(response.body).toHaveProperty('token');
-        expect(response.body).toHaveProperty('users');
+        expect(response.body).toHaveProperty('user');
 
     });
 
