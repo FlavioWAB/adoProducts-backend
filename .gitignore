@@ -1,3 +1,4 @@
 /node_modules
 __tests/coverage/
+__tests/database.sqlite
 database.log
