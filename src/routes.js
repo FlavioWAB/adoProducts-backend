@@ -1,26 +1,11 @@
 const routes = require('express').Router();
-const { User } = require('./app/models');
+const LoginController = require('./app/controllers/LoginController')
+const authMiddleware = require('./app/middleware/auth');
 
-User.create({
-    name: 'Ronaldo',
-    email: 'meu@email.com',
-    password_hash: 'heoaeo'
-})
-User.create({
-    name: 'Ronaldo',
-    email: 'meu@emsail.com',
-    password_hash: 'heoaeo'
-})
-User.findOne({ where: { name: 'ronaldo' } })
+routes.post('/login', LoginController.login)
 
-User.update(
-    { name: 'a very different title now' },
-    { where: { name: 'ronaldo' } }
-)
-
-User.destroy({
-    where: { name: 'juliano' }
-})
-// Definição de rotas
+routes.get('/dash', authMiddleware, (req, res) => {
+    return res.status(200).send()
+});
 
 module.exports = routes;
