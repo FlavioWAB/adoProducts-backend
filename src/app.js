@@ -3,6 +3,7 @@ require('dotenv').config({
 });
 
 const express = require('express');
+var cors = require('cors')
 
 class AppController {
     constructor() {
@@ -14,6 +15,10 @@ class AppController {
 
     middlewares() {
         this.express.use(express.json());
+        this.express.use(cors({
+            origin: 'http://localhost:8000',
+            optionsSuccessStatus: 200
+        }));
     }
 
     routes() {
