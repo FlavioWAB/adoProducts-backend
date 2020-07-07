@@ -73,7 +73,7 @@ class ProductController {
         } else {
 
             return res.status(404).json({
-                error: ['No product found']
+                error: ['Nothing to update']
             });
 
         }
