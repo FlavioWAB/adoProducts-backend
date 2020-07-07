@@ -3,6 +3,12 @@ require('dotenv').config({
 });
 const logger = require('./logger');
 
+const loggingFunction = (msg, object) => {
+  logger.info({ action: msg, binds: object.bind });
+}
+
+const loggingState = process.env.NODE_ENV === 'test' ? false : loggingFunction;
+
 module.exports = {
   username: process.env.DB_USER,
   password: process.env.DB_PASS,
@@ -13,7 +19,5 @@ module.exports = {
   define: {
     timestamps: true
   },
-  logging: (msg, object) => {
-    logger.info({ action: msg, binds: object.bind });
-  },
+  logging: loggingState,
 };

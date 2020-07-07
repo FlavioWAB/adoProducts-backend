@@ -6,10 +6,10 @@ class UserController {
     async register(req, res) {
         const { name, email, password } = req.body;
 
-        const anyAreEmpty = fieldValidation.notEmpty({ name, email, password });
+        const anyAreEmpty = fieldValidation.areEmpty({ name, email, password });
 
         if (anyAreEmpty) {
-            return res.status(422).json({ error: anyAreEmpty.missingFields });
+            return res.status(422).json({ error: anyAreEmpty });
         } else {
             try {
                 const user = await User.create({ name, email, password });
@@ -17,8 +17,7 @@ class UserController {
                     user: {
                         id: user.id,
                         email: user.email,
-                        name: user.name,
-                        createdAt: user.createdAt
+                        name: user.name
                     },
                     token: user.generateToken()
                 });

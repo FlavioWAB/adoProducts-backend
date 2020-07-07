@@ -25,9 +25,14 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false
       },
-      avaliableUnits:{
+      avaliableUnits: {
         type: Sequelize.INTEGER,
         allowNull: false
+      },
+      isActive: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        defaultValue: true,
       },
       createdAt: {
         type: Sequelize.DATE,

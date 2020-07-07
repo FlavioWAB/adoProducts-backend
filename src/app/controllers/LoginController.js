@@ -5,11 +5,11 @@ class LoginController {
     async login(req, res) {
         const { email, password } = req.body;
 
-        const anyAreEmpty = fieldValidation.notEmpty({ email, password });
+        const anyAreEmpty = fieldValidation.areEmpty({ email, password });
 
         if (anyAreEmpty) {
 
-            return res.status(422).json({ error: anyAreEmpty.missingFields });
+            return res.status(422).json({ error: anyAreEmpty });
 
         } else {
 
@@ -28,7 +28,11 @@ class LoginController {
             }
 
             return res.status(200).json({
-                user,
+                user: {
+                    id: user.id,
+                    email: user.email,
+                    name: user.name
+                },
                 token: user.generateToken()
             });
         }

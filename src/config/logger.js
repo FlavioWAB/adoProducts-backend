@@ -3,7 +3,6 @@ require('dotenv').config({
 });
 
 const winston = require('winston');
-const { combine, timestamp, printf } = winston.format;
 
 const WinstonTransportSequelize = require('winston-transport-sequelize');
 const Sequelize = require('sequelize');
@@ -25,11 +24,6 @@ const options = {
     meta: { project: 'myProject' },
     level: 'info'
 }
-
-const myFormat = printf(({ level, message, timestamp }) => {
-    if (level === 'error') return `${timestamp} ERROR reason: "${message.action.replace('Executing (default): ', '')}" context:${JSON.stringify(message.context)}`;
-    return `${timestamp} ${level.toUpperCase()} action: "${message.action.replace('Executing (default): ', '')}" ${message.binds ? `binds: ${JSON.stringify(message.binds)}` : ''}`;
-});
 
 const logger = winston.createLogger({
     transports: [

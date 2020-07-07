@@ -9,9 +9,9 @@ module.exports = {
         autoIncrement: true
       },
       level: Sequelize.STRING,
-      message: Sequelize.TEXT,
+      message: Sequelize.STRING,
       meta: {
-        type: Sequelize.TEXT,
+        type: Sequelize.STRING,
         set: function (value) {
           this.setDataValue('meta', JSON.stringify(value));
         },

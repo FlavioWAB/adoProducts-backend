@@ -14,8 +14,8 @@ class Faker {
             name: fakerLib.commerce.productName(),
             description: fakerLib.lorem.paragraph(),
             category: fakerLib.commerce.department(),
-            price: fakerLib.commerce.price(),
-            avaliableUnits: fakerLib.finance.amount()
+            price: Number(fakerLib.commerce.price()),
+            avaliableUnits: Number(fakerLib.finance.amount())
         };
     }
 }

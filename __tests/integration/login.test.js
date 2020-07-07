@@ -18,7 +18,7 @@ describe('Authentication', () => {
                 email: user.email,
                 password: user.password,
             });
-            
+
         expect(response.status).toBe(200);
     });
 
@@ -52,21 +52,22 @@ describe('Authentication', () => {
         const user = await factory.create('User');
 
         const response = await request(app)
-            .get('/dash')
+            .get('/products')
             .set('Authorization', `Bearer ${user.generateToken()}`);
 
         expect(response.status).toBe(200);
     });
-    
+
     it('should not be able to access private routes when not authenticated', async () => {
-        const response = await request(app).get('/dash');
+        const response = await request(app)
+            .get('/products');
 
         expect(response.status).toBe(401);
     });
-    
+
     it('should not be able to access private routes when authenticated with invalid tokens', async () => {
         const response = await request(app)
-            .get('/dash')
+            .get('/products')
             .set('Authorization', `Bearer Lorem Ipsum`);
 
         expect(response.status).toBe(401);
