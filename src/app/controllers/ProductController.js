@@ -168,7 +168,8 @@ class ProductController {
                 const products = await Product.findAndCountAll({
                     where: whereClause,
                     limit: limit,
-                    offset: (limit * page - limit)
+                    offset: (limit * page - limit),
+                    order: [['updatedAt', 'DESC']]
                 });
 
                 if (!products.rows.length) {
@@ -183,7 +184,10 @@ class ProductController {
             }
         } else {
 
-            const products = await Product.findAll({ where: whereClause });
+            const products = await Product.findAll({
+                where: whereClause,
+                order: [['updatedAt', 'DESC']]
+            });
 
             if (!products.length) {
                 return res.status(404).json({ error: ["No product found"] });
@@ -204,8 +208,6 @@ class ProductController {
         const paged = /result-limit\/[0-9]+\/page\/[0-9]+/.test(req.url);
         const emptyQuery = fieldValidation.areEmpty({ query });
 
-        let pagination = {};
-
         if (emptyQuery) {
             return res.status(422).json({ error: emptyQuery });
         }
@@ -223,7 +225,8 @@ class ProductController {
                     where: Sequelize.literal('isActive = true AND (lower(name) LIKE :query OR lower(description) LIKE :query OR lower(category) LIKE :query)'),
                     replacements: { query },
                     limit: limit,
-                    offset: (limit * page - limit)
+                    offset: (limit * page - limit),
+                    order: [['updatedAt', 'DESC']]
                 });
 
                 if (!products.rows.length) {
@@ -240,7 +243,8 @@ class ProductController {
 
             const products = await Product.findAll({
                 where: Sequelize.literal('isActive = true AND (lower(name) LIKE :query OR lower(description) LIKE :query OR lower(category) LIKE :query)'),
-                replacements: { query }
+                replacements: { query },
+                order: [['updatedAt', 'DESC']]
             });
 
             if (!products) {
