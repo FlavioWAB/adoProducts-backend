@@ -15,12 +15,17 @@ class AppController {
 
     middlewares() {
         this.express.use(express.json());
+
+        const whitelist = ['http://localhost:8000', 'https://mystifying-kirch-b6b1a1.netlify.app/']
+
         this.express.use(cors({
-            origin: 'http://localhost:8000',
-            optionsSuccessStatus: 200
-        }));
-        this.express.use(cors({
-            origin: 'https://mystifying-kirch-b6b1a1.netlify.app/',
+            origin: function (origin, callback) {
+                if (whitelist.indexOf(origin) !== -1) {
+                    callback(null, true)
+                } else {
+                    callback(new Error('Not allowed by CORS'))
+                }
+            },
             optionsSuccessStatus: 200
         }));
     }
