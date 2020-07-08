@@ -12,7 +12,7 @@ routes.post('/users', UserController.register)
 routes.post('/products', authMiddleware, ProductController.register);
 routes.delete('/products/:id', authMiddleware, ProductController.delete);
 routes.put('/products/:id', authMiddleware, ProductController.update);
-routes.get('/products/search(/result-limit/:limit/page/:page)?', authMiddleware, ProductController.search);
-routes.get('/products/:id?', authMiddleware, ProductController.get);
+routes.get('/products/search(/result-limit/:limit/page/:page)?/query/:query', authMiddleware, ProductController.search);
+routes.get('/products((/result-limit/:limit/page/:page)|(/:id))?', authMiddleware, ProductController.get);
 
 module.exports = routes;

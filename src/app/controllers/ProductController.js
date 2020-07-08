@@ -115,7 +115,7 @@ class ProductController {
             const affectedRows = await Product.update(updateParams, {
                 where: { id, isActive: true }
             });
-            
+
             if (affectedRows[0]) {
 
                 const product = await Product.findOne({
@@ -144,40 +144,59 @@ class ProductController {
     async get(req, res) {
         const { id } = req.params;
 
-        if (typeof id === 'undefined') {
-            try {
-                const products = await Product.findAll({ where: { isActive: true } });
+        let { limit, page } = req.params;
 
-                return res.status(200).json({
-                    products
+        limit = Number(limit);
+        page = Number(page);
+
+        const paged = /result-limit\/[0-9]+\/page\/[0-9]+/.test(req.url);
+
+        let whereClause;
+
+        if (typeof id === 'undefined') {
+            whereClause = { isActive: true }
+        } else {
+            whereClause = { id, isActive: true }
+        }
+
+        if (paged) {
+            const anyArentNumbers = fieldValidation.areNotNumbers({ limit, page });
+
+            if (anyArentNumbers) {
+                return res.status(422).json({ error: anyArentNumbers });
+            } else {
+                const products = await Product.findAndCountAll({
+                    where: whereClause,
+                    limit: limit,
+                    offset: (limit * page - limit)
                 });
 
-            } catch (err) {
-                errorLogger(err);
-                return res.status(500).json({ error: ["Internal server error"] });
-            }
-        } else {
-            try {
-                const product = await Product.findOne({ where: { id, isActive: true } });
-
-                if (!product) {
+                if (!products.rows.length) {
                     return res.status(404).json({ error: ["No product found"] });
                 } else {
                     return res.status(200).json({
-                        product
+                        total: products.count,
+                        pages: Math.ceil(products.count / limit),
+                        products: products.rows
                     });
                 }
-            } catch (err) {
-                errorLogger(err);
-                return res.status(500).json({ error: ["Internal server error"] });
+            }
+        } else {
+
+            const products = await Product.findAll({ where: whereClause });
+
+            if (!products.length) {
+                return res.status(404).json({ error: ["No product found"] });
+            } else {
+                const response = typeof id === 'undefined' ? { products } : { product: products }
+                return res.status(200).json(response);
             }
         }
     }
 
     async search(req, res) {
-        let { query } = req.body;
 
-        let { limit, page } = req.params;
+        let { query, limit, page } = req.params;
 
         limit = Number(limit);
         page = Number(page);

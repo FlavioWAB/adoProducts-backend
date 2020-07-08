@@ -50,6 +50,7 @@ describe('Authentication', () => {
 
     it('should be able to access private routes when authenticated', async () => {
         const user = await factory.create('User');
+        await factory.create('Product');
 
         const response = await request(app)
             .get('/products')

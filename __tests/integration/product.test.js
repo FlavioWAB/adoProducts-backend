@@ -146,11 +146,8 @@ describe('Product Management', () => {
         const product = await factory.create('Product');
 
         const response = await request(app)
-            .get(`/products/search`)
-            .set('Authorization', bearerToken)
-            .send({
-                query: product.name.split(' ')[0]
-            });
+            .get(`/products/search/query/${product.name.split(' ')[0]}`)
+            .set('Authorization', bearerToken);
 
         expect(response.status).toBe(200);
     });
