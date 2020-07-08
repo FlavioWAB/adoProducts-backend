@@ -19,6 +19,10 @@ class AppController {
             origin: 'http://localhost:8000',
             optionsSuccessStatus: 200
         }));
+        this.express.use(cors({
+            origin: 'https://mystifying-kirch-b6b1a1.netlify.app/',
+            optionsSuccessStatus: 200
+        }));
     }
 
     routes() {
