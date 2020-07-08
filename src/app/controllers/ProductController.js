@@ -239,7 +239,7 @@ class ProductController {
         } else {
 
             const products = await Product.findAll({
-                where: Sequelize.literal('lower(name) LIKE :query OR lower(description) LIKE :query OR lower(category) LIKE :query'),
+                where: Sequelize.literal('isActive = true AND (lower(name) LIKE :query OR lower(description) LIKE :query OR lower(category) LIKE :query)'),
                 replacements: { query }
             });
 
