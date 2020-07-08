@@ -16,7 +16,7 @@ class AppController {
     middlewares() {
         this.express.use(express.json());
 
-        const whitelist = ['http://localhost:8000', 'https://mystifying-kirch-b6b1a1.netlify.app/']
+        var whitelist = ['http://localhost:8000', 'https://mystifying-kirch-b6b1a1.netlify.app']
 
         this.express.use(cors({
             origin: function (origin, callback) {
