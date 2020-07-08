@@ -188,7 +188,7 @@ class ProductController {
             if (!products.length) {
                 return res.status(404).json({ error: ["No product found"] });
             } else {
-                const response = typeof id === 'undefined' ? { products } : { product: products }
+                const response = typeof id === 'undefined' ? { products } : { product: products[0] }
                 return res.status(200).json(response);
             }
         }
